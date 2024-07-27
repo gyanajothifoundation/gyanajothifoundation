@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>GyanajyothiFoundation</title>
   <link rel="icon" type="image/x-icon" href="">
@@ -26,27 +26,59 @@
   <link href="assets/css/style.css" rel="stylesheet">
 <style>
 div.gallery {
-  margin: 5px;
   border: 1px solid #ccc;
-  float: inline-start ;
-  width: 180px;
-  text-align: center;
 }
 
 div.gallery:hover {
   border: 1px solid #777;
-  text-align: center;
 }
 
 div.gallery img {
   width: 100%;
   height: auto;
-  text-align: center;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: whitesmoke;
+   color: black;
+   padding: 2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #hero:before {
@@ -79,45 +111,56 @@ div.desc {
 <h4 id="name" style="color: rgb(0, 0, 0); text-shadow: 2px 4px 6px #888686; text-align: center; padding: 5px;">Give a helping hand for poor people</h4>
 </div>
 <section>
-<div>
+
+<div class="responsive">
 <div class="gallery">
   <a href="assets/img/img1.jpeg">
-    <img src="assets/img/img1.jpeg" alt="">
+    <img src="assets/img/img1.jpeg" alt="" width="600" height="400">
   </a>
-</div>
+</div></div>
 
+<div class="responsive">
 <div class="gallery">
   <a href="assets/img/img2.jpeg">
     <img src="assets/img/img2.jpeg" alt="" width="600" height="400">
   </a>
 </div>
+</div>
 
+<div class="responsive">
 <div class="gallery">
   <a href="assets/img/img3.jpeg">
     <img src="assets/img/img3.jpeg" alt=" " width="600" height="400">
   </a>
 </div>
+</div>
 
+<div class="responsive">
 <div class="gallery">
   <a href="assets/img/img4.jpeg">
     <img src="assets/img/img4.jpeg" alt="" width="600" height="400">
   </a>
 </div>
+</div>
 
+<div class="responsive">
 <div class="gallery">
     <a href="assets/img/img4.jpeg">
       <img src="https://gyanajyothifoundation.org/wp-content/uploads/2023/12/WhatsApp-Image-2023-12-05-at-12.32.10_bb694067.jpg" alt="" width="600" height="400">
     </a>
   </div>
+  </div>
 
+<div class="responsive">
   <div class="gallery">
     <a href="assets/img/img4.jpeg">
       <img src="https://gyanajyothifoundation.org/wp-content/uploads/2018/04/WhatsApp-Image-2023-12-01-at-09.58.11.jpeg" alt="" width="600" height="400">
     </a>
   </div>
+  </div>
+  </Section>
 </div>
 
-    </div>
 
   <div>
     <section id="contact" class="contact" style="background-color: #bbb8b8;">
